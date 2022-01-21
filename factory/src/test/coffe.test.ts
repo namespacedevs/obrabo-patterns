@@ -12,6 +12,7 @@ describe("Coffe", function() {
     describe("addCoffe", function(){
         it("Should be add coffe in the water ", function() {
             const coffe = new Coffe('Café Viana', 'Extra Forte');
+            coffe.boil();
             expect( coffe.addCoffe()).to.equal(true);
         });
         it("Should be return false if watterIsHot equals false", function() {
