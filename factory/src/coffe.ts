@@ -21,4 +21,10 @@ export class Coffe {
         console.log('Ops!!! para adicionar o café a água precisa estar quente!')
         return false;
     }
+
+    waitForPreparationTime() {
+        console.log('Aguardando o tempo de preparo do café...')
+        setTimeout(() => {console.log(`Seu ${this.name} esta quase pronto...`)}, 3000);
+        return true;
+    }
 }
