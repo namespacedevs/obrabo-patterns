@@ -14,5 +14,9 @@ describe("Coffe", function() {
             const coffe = new Coffe('Café Viana', 'Extra Forte');
             expect( coffe.addCoffe()).to.equal(true);
         });
+        it("Should be return false if watterIsHot equals false", function() {
+            const coffe = new Coffe('Café Viana', 'Extra Forte');
+            expect( coffe.addCoffe()).to.equal(false);
+        });
     })
 });
