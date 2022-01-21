@@ -20,4 +20,12 @@ describe("Coffe", function() {
             expect( coffe.addCoffe()).to.equal(false);
         });
     })
+    describe("waitForPreparationTime", function(){
+        it("Should return true when the coffee is ready", function() {
+            const coffe = new Coffe('Café Viana', 'Extra Forte');
+            coffe.boil();
+            coffe.addCoffe()
+            expect(coffe.waitForPreparationTime()).to.equal(true);
+        });
+    })
 });
