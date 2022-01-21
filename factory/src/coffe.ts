@@ -13,8 +13,12 @@ export class Coffe {
         console.log('Fervura Concluida!! \n');
     }
     addCoffe() : Boolean {
-        console.log('Adicionando Café...');
-        console.log('Café adicionado com sucesso!');
-        return true;
+        if(this.watterIsHot){
+            console.log('Adicionando Café...');
+            console.log('Café adicionado com sucesso!');
+            return true;
+        }
+        console.log('Ops!!! para adicionar o café a água precisa estar quente!')
+        return false;
     }
 }
