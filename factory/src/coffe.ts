@@ -12,4 +12,9 @@ export class Coffe {
         this.watterIsHot = true;
         console.log('Fervura Concluida!! \n');
     }
+    addCoffe() : Boolean {
+        console.log('Adicionando Café...');
+        console.log('Café adicionado com sucesso!');
+        return true;
+    }
 }
