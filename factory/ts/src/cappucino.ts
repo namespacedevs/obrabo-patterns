@@ -9,6 +9,7 @@ export class Cappucino implements CafeInterface{
         console.log('Coloque a mistura em um recipiente com tampa e acrescente os outros ingredientes. \n');
         console.log('Agite vigorosamente o recipiente até que a mistura esteja homogênea \n');
         console.log(mensagemDeRetorno);
+        this.pronto = true;
         return mensagemDeRetorno;
     }
 }
