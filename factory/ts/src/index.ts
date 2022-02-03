@@ -1,4 +1,8 @@
 import { Cappucino } from "./cappucino";
+import { Macchiato } from "./macchiato";
 
-const cafe = new Cappucino();
-cafe.preparar();
+const cappucino = new Cappucino();
+cappucino.preparar();
+
+const macchiato = new Macchiato();
+macchiato.preparar();
