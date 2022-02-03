@@ -1,6 +1,10 @@
 import { CafeInterface } from "./cafe.interface";
 
 export class Cappucino implements CafeInterface{
+    nome: string;
+    constructor(nome: string) {
+        this.nome = nome;
+    }
     preparar(): void {
         console.log('Modo de Preparo: \n');
         console.log('Misture no liquidificador o leite em pó e o café solúvel (para triturar o café). \n');
