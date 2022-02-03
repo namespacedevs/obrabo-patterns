@@ -10,11 +10,11 @@ const macchiato = new Macchiato();
 macchiato.preparar();
 
 const cappucinoFabrica = new CappucinoFabrica();
-const cappucino1 = cappucinoFabrica.preparar();
+const cappucino1 = cappucinoFabrica.criar();
 
 console.log(cappucino1);
 
 const macchiatoFabrica = new MacchiatoFabrica();
-const macchiato1 = macchiatoFabrica.preparar();
+const macchiato1 = macchiatoFabrica.criar();
 
 console.log(macchiato1);

@@ -3,7 +3,7 @@ import { Cappucino } from "../cappucino";
 import { CafeFactoryInterface } from "./cafe-fabrica.interface";
 
 export class CappucinoFabrica implements CafeFactoryInterface{
-    preparar(): CafeInterface {
+    criar(): CafeInterface {
        const cappucino = new Cappucino();
        cappucino.preparar();
        return cappucino;

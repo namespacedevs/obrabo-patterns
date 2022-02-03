@@ -1,6 +1,7 @@
 import { CafeInterface } from "./cafe.interface";
 
 export class Cappucino implements CafeInterface{
+    pronto: boolean = false;
     preparar(): string {
         const mensagemDeRetorno = `Seu ${Cappucino.name} está pronto!`
         console.log('Modo de Preparo: \n');
