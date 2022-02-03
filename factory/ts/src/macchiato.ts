@@ -11,6 +11,7 @@ export class Macchiato implements CafeInterface{
         console.log('Vaporize o leite. \n');
         console.log(' Vire o leite sobre o café e sirva a bebida quente. \n');
         console.log(mensagemDeRetorno);
+        this.pronto = true;
         return mensagemDeRetorno;
     }
 }
