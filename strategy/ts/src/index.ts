@@ -3,7 +3,7 @@ import { Jadlog } from "./servicos/envios/jadlog";
 import { Sedex } from "./servicos/envios/sedex";
 import { FreteServico } from "./servicos/frete.servico";
 
-console.log('[strategy] aplicação iniciado com sucesso!');
+console.log('[strategy] aplicação iniciada com sucesso!');
 const servico = new FreteServico(new Fedex());
 const valorFedex = servico.calcula(1);
 
