@@ -4,7 +4,8 @@ var expect    = require("chai").expect;
 describe("Jadlog Test", function() {
     describe("Calcular", function() {
       it("Deve retornar 0,3 quanto o peso for 1", function() {
-            const valorDoEnvio = Jadlog.calcular(1);
+            const jadlog = new Jadlog();
+            const valorDoEnvio = jadlog.calcular(1);
             expect(valorDoEnvio).to.equal(0.3);
       });
     });
