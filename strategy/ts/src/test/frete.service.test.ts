@@ -27,4 +27,12 @@ describe("FreteServico Test", function() {
             expect(valorDoEnvio).to.equal(0.6);
         });
     });
+    describe("Alterar Servico", function() {
+        it("Deve alterar o envio existente para Sedex e retornar o valor 0,6 quanto o peso for 1 ", function() {
+            const servico = new FreteServico(new Fedex());
+            servico.definirEnvio(new Sedex());
+            const valorDoEnvio = servico.calcula( 1);
+            expect(valorDoEnvio).to.equal(0.6);
+        });
+    });
 });
