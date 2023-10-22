@@ -3,5 +3,13 @@
     "psr-4" : {
       "src\\" : "src"
     }
+  },
+  "require-dev": {
+    "pestphp/pest": "^2.24"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
   }
 }
